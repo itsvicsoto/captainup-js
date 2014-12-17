@@ -1,4 +1,4 @@
-express-ng-boilerplate
+express-boilerplate
 ======================
 
-Plain Angular running on ExpressJS Boilerplate for Starters
+ExpressJS Boilerplate for Starters
