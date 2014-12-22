@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>Test</title>
+    <title>Test</title>
 </head>
+
 <body>
 
-Silence is Golden..
+    Silence is Golden..
+    
+    
+    
+    <div id='cptup-ready'></div>
+    <script data-cfasync='false' type='text/javascript'>
+    window.captain = {
+        up: function(fn) {
+            captain.topics.push(fn)
+        },
+        topics: []
+    };
+    
+    // Captain Up Configuration
+    captain.up({
+      // Your API key
+      api_key: '549797f673873a187f0000d4',
+      // Enable cookie sessions
+      cookie: true,
+      // Sync the user details to Captain Up
+      user: {
+        // The user's unique ID on your site or app
+        id: '1',
+        // The user name
+        name: 'Vic Soto',
+        // The user profile picture, a full URL
+        image: 'https://example.com/user-profile-picture.png',
+        // Any custom field you want.
+        favorite_color: 'blue'
+      }
+    });
+
+    </script>
+    <script data-cfasync='false' type='text/javascript'>
+    (function() {
+        var cpt = document.createElement('script');
+        cpt.type = 'text/javascript';
+        cpt.async = true;
+        cpt.src = 'http' + (location.protocol == 'https:' ? 's' : '') + '://captainup.com/assets/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(cpt);
+    })();
+    </script>
 
 </body>
+
 </html>
